@@ -1,0 +1,141 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: header__font;
+  src: url(./font/Merriweather.ttf);
+}
+
+@font-face {
+  font-family: content__font;
+  src: url(./font/SourceSansPro.ttf);
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+body {
+  font-family: content__font;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 20px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+h1, h2 {
+  font-family: header__font;
+}
+
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 20px;
+}
+
+header {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+p{
+  text-indent: 20px;
+}
+
+a:hover, a:visited, a:focus, a:link{
+  color: #a66;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a {
+  outline: none;
+}
+
+a:active{
+  font-size: 12px;
+  color: #a57;
+}
+
+a[href^="https://"] {
+  background: transparent url(external-link-52.png) center right no-repeat;
+  background-size: 10px;
+  padding-right: 13px;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.nav__ul a {
+  text-decoration: none;
+}
+
+.nav__ul{
+  list-style: none;
+}
+
+.nav__ul li{
+  font-size: 15px;
+  width: 150px;
+  height: auto;
+  padding: 20px 1px;
+  border: 1px solid #a66;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.nav__ul--picked{
+  background: #a66;
+}
+
+.nav__ul--picked a{
+  color: white;
+}
